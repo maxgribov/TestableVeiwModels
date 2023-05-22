@@ -128,6 +128,49 @@ struct ProductsContentServiceAdapter: ProductsVeiwModelContentService {
     }
 }
 
+final class ProductsViewModel_alt: ObservableObject {
+    
+    @Published private(set) var state: ProductsViewModel.State
+    
+    // it should be the responsibility of the caller/composition root to provide `dataService` adapted for the need of `ProductsViewModel`
+    init(
+        initialState: ProductsViewModel.State = .placeholders,
+        dataService: AnyPublisher<[Item], Never>,
+        select: @escaping (Item.ID) -> Void
+        // + scheduler
+    ) {
+        self.state = initialState
+        
+        dataService
+            .removeDuplicates()
+            .map {
+                $0.map { ProductsViewModel.ItemViewModel(item: $0, select: select) }
+            }
+            .map { ProductsViewModel.State.items($0) }
+        // replace with scheduler
+            .receive(on: DispatchQueue.main)
+            .assign(to: &$state)
+    }
+    
+    struct Item: Identifiable, Equatable {
+        
+        let id: Product.ID
+        let name: String
+        let amount: String
+    }
+}
+    
+extension ProductsViewModel.ItemViewModel {
+    
+    init(
+        item: ProductsViewModel_alt.Item,
+        select: @escaping (ProductsViewModel_alt.Item.ID) -> Void
+    ) {
+        self.init(id: item.id, name: item.name, amount: item.amount, action: select)
+    }
+}
+    
+    
 final class ProductsViewModel: ObservableObject {
     
     let action: PassthroughSubject<Action, Never> = .init()
@@ -207,7 +250,7 @@ extension ProductsViewModel {
         let id: Product.ID
         let name: String
         let amount: String
-        let action: () -> Void
+        let action: (Product.ID) -> Void
     }
 }
 
