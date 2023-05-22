@@ -58,7 +58,7 @@ protocol ProductsVeiwModelContentService {
     var blockProductResponse: AnyPublisher<(Product.ID, Result<Bool, Error>), Never> { get }
     
     func reduce(products: [Product], statements: [Statement], formatter: NumberFormatter, action: (ProductsViewModel.ItemViewModel.ID) -> (() -> Void)) -> [ProductsViewModel.ItemViewModel]
-    func blockProductRequest(productId: Product.ID)
+    func itemDidTapped(itemId: ProductsViewModel.ItemViewModel.ID)
     func reduce(state: inout ProductsViewModel.State, result: Result<Bool, Error>, productId: Product.ID)
 }
 
@@ -103,9 +103,9 @@ struct ProductsContentServiceAdapter: ProductsVeiwModelContentService {
         }
     }
     
-    func blockProductRequest(productId: Product.ID) {
+    func itemDidTapped(itemId: ProductsViewModel.ItemViewModel.ID) {
         
-        modelAction.send(ModelAction.ProductActions.Block.Request(productId: productId))
+        modelAction.send(ModelAction.ProductActions.Block.Request(productId: itemId))
     }
     
     func reduce(state: inout ProductsViewModel.State, result: Result<Bool, Error>, productId: Product.ID) {
@@ -180,7 +180,7 @@ extension ProductsViewModel {
             .receive(on: DispatchQueue.main)
             .sink { [unowned self] itemId in
                 
-                contentService.blockProductRequest(productId: itemId)
+                contentService.itemDidTapped(itemId: itemId)
                 
             }.store(in: &bindings)
         
