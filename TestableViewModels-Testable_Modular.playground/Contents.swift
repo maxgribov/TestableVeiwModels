@@ -61,8 +61,6 @@ protocol ProductsVeiwModelContentService {
 
 final class ProductsViewModel: ObservableObject {
     
-    let action: PassthroughSubject<Action, Never> = .init()
-    
     @Published var state: State
     
     private let contentService: ProductsVeiwModelContentService
