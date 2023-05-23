@@ -146,7 +146,7 @@ final class ProductsViewModel_alt: ObservableObject {
             .map {
                 $0.map { ProductsViewModel.ItemViewModel(item: $0, select: select) }
             }
-            .map { ProductsViewModel.State.items($0) }
+            .map(ProductsViewModel.State.init)
         // replace with scheduler
             .receive(on: DispatchQueue.main)
             .assign(to: &$state)
@@ -169,7 +169,18 @@ extension ProductsViewModel.ItemViewModel {
         self.init(id: item.id, name: item.name, amount: item.amount, action: select)
     }
 }
+
+extension ProductsViewModel.State {
     
+    init(items: [ProductsViewModel.ItemViewModel]) {
+        
+        if items.isEmpty {
+            self = .placeholders
+        } else {
+            self = .items(items)
+        }
+    }
+}
     
 final class ProductsViewModel: ObservableObject {
     
