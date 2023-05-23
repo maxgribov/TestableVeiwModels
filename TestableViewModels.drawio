@@ -1,9 +1,12 @@
-<mxfile host="Electron" modified="2023-05-22T22:07:06.620Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="0nzJoYt1HdSMDYAFXIVo" version="21.2.8" type="device">
+<mxfile host="Electron" modified="2023-05-23T04:39:04.630Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.2.8 Chrome/112.0.5615.165 Electron/24.2.0 Safari/537.36" etag="0FM9OxjNYwp3YEpHmtfg" version="21.2.8" type="device">
   <diagram name="Page-1" id="Tdo1OIQlxjpybfJL_MLT">
-    <mxGraphModel dx="1283" dy="1329" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="641" dy="864" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="s98ecHIXDpBI-TcutakD-3" value="Model" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#ffffff;strokeColor=#A50040;strokeWidth=2;fillColor=#d80073;" vertex="1" parent="1">
+          <mxGeometry x="2546" y="61" width="248" height="152" as="geometry" />
+        </mxCell>
         <mxCell id="hjIjUniiMOIQKqP6LFlC-86" value="" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="802" y="340" width="442" height="358" as="geometry" />
         </mxCell>
@@ -117,44 +120,77 @@
         <mxCell id="hjIjUniiMOIQKqP6LFlC-92" value="&lt;h1&gt;Adapter&lt;/h1&gt;&lt;div&gt;- Easy to test&lt;/div&gt;&lt;div&gt;- Required protocol to extract to module&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=12;fontFamily=Helvetica;fontColor=default;" parent="1" vertex="1">
           <mxGeometry x="1571" y="-90" width="369" height="91" as="geometry" />
         </mxCell>
-        <mxCell id="ECx3OVRJ86sRdIHFYsL_-1" value="Adapter" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF99FF;strokeColor=#FF99FF;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="ECx3OVRJ86sRdIHFYsL_-1" value="Adapter" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF99FF;strokeColor=#FF99FF;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="2141" y="182" width="200" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ECx3OVRJ86sRdIHFYsL_-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;dashed=1;strokeColor=#FF99FF;fontColor=#FF99FF;endArrow=block;endFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ECx3OVRJ86sRdIHFYsL_-1" target="ECx3OVRJ86sRdIHFYsL_-4">
+        <mxCell id="ECx3OVRJ86sRdIHFYsL_-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;dashed=1;strokeColor=#FF99FF;fontColor=#FF99FF;endArrow=block;endFill=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="ECx3OVRJ86sRdIHFYsL_-1" target="ECx3OVRJ86sRdIHFYsL_-4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="2241" y="102" as="targetPoint" />
             <mxPoint x="2151" y="-28" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ECx3OVRJ86sRdIHFYsL_-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#FF99FF;fontColor=#FF99FF;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="ECx3OVRJ86sRdIHFYsL_-5" target="ECx3OVRJ86sRdIHFYsL_-4">
+        <mxCell id="ECx3OVRJ86sRdIHFYsL_-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#FF99FF;fontColor=#FF99FF;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ECx3OVRJ86sRdIHFYsL_-5" target="ECx3OVRJ86sRdIHFYsL_-4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="2191" y="102" as="targetPoint" />
             <mxPoint x="2177" y="264" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ECx3OVRJ86sRdIHFYsL_-4" value="&amp;lt;Service&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF99FF;strokeColor=#FF99FF;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="ECx3OVRJ86sRdIHFYsL_-4" value="&amp;lt;Service&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF99FF;strokeColor=#FF99FF;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="2141" y="295" width="200" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ECx3OVRJ86sRdIHFYsL_-5" value="ViewModel" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF99FF;strokeColor=#FF99FF;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="ECx3OVRJ86sRdIHFYsL_-5" value="ViewModel" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF99FF;strokeColor=#FF99FF;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="2141" y="407" width="200" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ECx3OVRJ86sRdIHFYsL_-6" value="APIProductService" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF99FF;strokeColor=#FF99FF;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="ECx3OVRJ86sRdIHFYsL_-6" value="APIProductService" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF99FF;strokeColor=#FF99FF;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="2141" y="59" width="200" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ECx3OVRJ86sRdIHFYsL_-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#FF99FF;fontColor=#FF99FF;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="ECx3OVRJ86sRdIHFYsL_-1" target="ECx3OVRJ86sRdIHFYsL_-6">
+        <mxCell id="ECx3OVRJ86sRdIHFYsL_-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#FF99FF;fontColor=#FF99FF;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="ECx3OVRJ86sRdIHFYsL_-1" target="ECx3OVRJ86sRdIHFYsL_-6" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="2251" y="345" as="targetPoint" />
             <mxPoint x="2244" y="186" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ECx3OVRJ86sRdIHFYsL_-8" value="protocol is not the only way to have polymorfic interface" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF99FF;strokeColor=none;strokeWidth=2;align=left;" vertex="1" parent="1">
+        <mxCell id="ECx3OVRJ86sRdIHFYsL_-8" value="protocol is not the only way to have polymorfic interface" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF99FF;strokeColor=none;strokeWidth=2;align=left;" parent="1" vertex="1">
           <mxGeometry x="1792" y="-39" width="335" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ECx3OVRJ86sRdIHFYsL_-9" value="Adapter patterns looks different" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#CCFF99;strokeColor=none;strokeWidth=2;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="ECx3OVRJ86sRdIHFYsL_-9" value="Adapter patterns looks different" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#CCFF99;strokeColor=none;strokeWidth=2;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="2141" y="-6" width="200" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ECx3OVRJ86sRdIHFYsL_-10" value="What exactly adapter adapts? in code it looks like implementation of the protocol without an adaptee&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF99FF;strokeColor=none;strokeWidth=2;align=left;" vertex="1" parent="1">
+        <mxCell id="ECx3OVRJ86sRdIHFYsL_-10" value="What exactly adapter adapts? in code it looks like implementation of the protocol without an adaptee&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF99FF;strokeColor=none;strokeWidth=2;align=left;" parent="1" vertex="1">
           <mxGeometry x="1204" y="265" width="330" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s98ecHIXDpBI-TcutakD-1" value="AnyPublisher&amp;lt;([Product], [Statement]), Never&amp;gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#FF99FF;strokeColor=#FF99FF;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="2570.5" y="161" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s98ecHIXDpBI-TcutakD-2" value="Alternative Solution" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#CCFF99;strokeColor=none;strokeWidth=2;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="2575" y="-12" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s98ecHIXDpBI-TcutakD-4" value="Composition Root (Main)" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#ffffff;strokeColor=#3700CC;strokeWidth=2;fillColor=#6a00ff;" vertex="1" parent="1">
+          <mxGeometry x="2918" y="289" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s98ecHIXDpBI-TcutakD-5" value="Mapper&lt;br&gt;([Product], [Statement]) -&amp;gt; [Item]" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#ffffff;strokeColor=#006EAF;strokeWidth=2;fillColor=#1ba1e2;" vertex="1" parent="1">
+          <mxGeometry x="2570.5" y="289" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s98ecHIXDpBI-TcutakD-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#FF99FF;fontColor=#FF99FF;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="s98ecHIXDpBI-TcutakD-4" target="s98ecHIXDpBI-TcutakD-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2251" y="109" as="targetPoint" />
+            <mxPoint x="2795" y="234" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s98ecHIXDpBI-TcutakD-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#FF99FF;fontColor=#FF99FF;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="s98ecHIXDpBI-TcutakD-4" target="s98ecHIXDpBI-TcutakD-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2781" y="191" as="targetPoint" />
+            <mxPoint x="3028" y="299" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s98ecHIXDpBI-TcutakD-8" value="ViewModel" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#ffffff;strokeColor=#2D7600;strokeWidth=2;fillColor=#60a917;" vertex="1" parent="1">
+          <mxGeometry x="2570.5" y="408" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s98ecHIXDpBI-TcutakD-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#FF99FF;fontColor=#FF99FF;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="s98ecHIXDpBI-TcutakD-4" target="s98ecHIXDpBI-TcutakD-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2789" y="319" as="targetPoint" />
+            <mxPoint x="2928" y="319" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
