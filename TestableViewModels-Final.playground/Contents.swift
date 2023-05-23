@@ -117,6 +117,7 @@ struct ProductsContentServiceAdapter: ProductsVeiwModelContentService {
             }
             
             let updatedItems = items.filter { $0.id != productId }
+            // service should not get into UI!!!
             withAnimation {
                 
                 state = .items(updatedItems)
@@ -179,6 +180,18 @@ extension ProductsViewModel.State {
         } else {
             self = .items(items)
         }
+    }
+}
+
+enum Mapper {}
+
+extension Mapper {
+    
+    // pure function, easy to test, maintain, replace, use
+    // should transform pure data types without logic, actions, animations, etc
+    static func reduce(products: [Product], statements: [Statement], formatter: NumberFormatter) -> [ProductsViewModel_alt.Item] {
+        
+        // all reducing goes here
     }
 }
     
